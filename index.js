@@ -15,7 +15,12 @@ inquirer
     },
     {
       type: 'input',
-      message: 'What is your GitHub URL?',
+      message: 'What is your GitHub UserName?',
+      name: 'gitUser'
+    },
+    {
+      type: 'input',
+      message: 'What is your GitHub Repo URL?',
       name: 'gitHub'
     },
     {
@@ -24,9 +29,15 @@ inquirer
         name: 'usage'  
     },
     {
-        type: 'input',
+      type: 'input',
+      message: 'What is your Email address?',
+      name: 'email',
+    },
+    {
+        type: 'list',
         message: 'What is the License of your project?',
-        name: 'license'
+        name: 'license',
+        choices: ['ISC', 'BSD-3-Clause', 'MIT', 'UNLICENSED'],
     },
   ])
   .then((answers) => {
@@ -35,7 +46,7 @@ inquirer
     err ? console.log(err) : console.log('Success!'));
   });
 
-  const makeMd = ({projectTitle, projDesc, license, gitHub, usage}) =>
+  const makeMd = ({projectTitle, projDesc, license, gitHub, usage, gitUser, email}) =>
   `# ⭐ ${projectTitle}
 
   ## 📘 Description of Project:
@@ -61,6 +72,14 @@ inquirer
   
   
   ${license}
+
+
+  ## ❔ Questions?
+
+  My Github User name is: ${gitUser}. Here is a link to my personal [GitHub Profile](https://github.com/Hank5050)
+
+  If you have any questions please feel free to email me at: ${email} 
+  I will return all correspondence as soon as possible.
   
   
 `;
