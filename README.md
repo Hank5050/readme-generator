@@ -16,12 +16,20 @@
   ## ✏ Usage:
 
   
-  To use the application, navigate to the folder containing the index.js file and open the integrated terminal in that folder. Type the prompt: node index.js  to run the index.js file. Answer the questions provided, and be as descriptive as possible. After answering the final question, the application will create a README.md file inside that folder using the information you provided.
+  To use the application, navigate to the folder containing the index.js file and open the integrated terminal in that folder. Type the prompt: node index.js to run the index.js file. Answer the questions provided, and be as descriptive as possible. After answering the final question, the application will create a README.md file inside that folder using the information you provided.
   
   
   ## 📃 License
   
   
   ISC
+
+
+  ## ❔ Questions?
+
+  My Github User name is: Hank5050. Here is a link to my personal [GitHub Profile](https://github.com/Hank5050)
+
+  If you have any questions please feel free to email me at: Chankins5050@gmail.com 
+  I will return all correspondence as soon as possible.
   
   
