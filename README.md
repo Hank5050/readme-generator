@@ -1,37 +1,25 @@
-# README Generator
+# ⭐ README Generator
 
-  ## Description of Project
-
-  
-  Project was to create a node application that prompts for information about your project, and creates a README.md file with the given information.
-  
-  
-  
-  
-  
-  - What was your motivation?
-  - Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-  - What problem does it solve?
-  - What did you learn?
-  
-  
-  ## Installation
+  ## 📘 Description of Project:
 
   
-  Make sure you have node installed on your PC, then simply go to [My GitHub Repo](https://github.com/Hank5050?tab=repositories) and clone the project to your personal computer.
+  Project was to create a node application that prompts for information about your project, and creates a README.md with the information provided. I built this project to be able to have my README.md files for every project easily created. This application allows me to have much more time to complete the actual coding, instead of having to spend time on building a README.md. This project has helped me learn how to succesfully write files with fs.writefile, and has given much insight on node itself! Was a great project that will be used many, many times in the future!
   
   
-  What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
   
-  ## Usage
-  
-  Provide instructions and examples for use. Include screenshots as needed.
+  ## 🛠 Installation:
 
   
-  Pull up the command terminal and run the index.js file  ex: node index.js  Answer the prompts according to your Project and when finished the application will write your README.md for you. If there is an error the terminal will log the exact error out for you. Have Fun!!
+  Make sure you have node installed on your PC, then simply go to [My GitHub Repo](https://github.com/Hank5050?tab=repositories) and clone the project to your personal computer. 
   
   
-  ## License
+  ## ✏ Usage:
+
+  
+  To use the application, navigate to the folder containing the index.js file and open the integrated terminal in that folder. Type the prompt: node index.js  to run the index.js file. Answer the questions provided, and be as descriptive as possible. After answering the final question, the application will create a README.md file inside that folder using the information you provided.
+  
+  
+  ## 📃 License
   
   
   ISC
