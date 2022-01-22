@@ -74,7 +74,7 @@ inquirer
   ${license}
 
 
-  ## ❔ Questions?
+  ## ❔ Questions
 
   My Github User name is: ${gitUser}. Here is a link to my personal [GitHub Profile](https://github.com/Hank5050)
 
