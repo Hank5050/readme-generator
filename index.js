@@ -39,15 +39,34 @@ inquirer
         name: 'license',
         choices: ['ISC', 'BSD-3-Clause', 'MIT', 'UNLICENSED'],
     },
+    {
+      type: 'input',
+      message: 'Is there any Contributers?',
+      name: 'contribute',
+    },
+    {
+      type: 'input',
+      message: 'Is there any Tests you would like to include?',
+      name: 'tests',
+    },
   ])
   .then((answers) => {
       const mdContent = makeMd(answers);
-    fs.writeFile('README.md', mdContent, (err) =>
+    fs.writeFile('/sample/README.md', mdContent, (err) =>
     err ? console.log(err) : console.log('Success!'));
   });
 
-  const makeMd = ({projectTitle, projDesc, license, gitHub, usage, gitUser, email}) =>
+  const makeMd = ({projectTitle, projDesc, license, gitHub, usage, gitUser, email, contribute, tests}) =>
   `# ⭐ ${projectTitle}
+
+  ## Table of Contents
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
 
   ## 📘 Description of Project:
 
@@ -67,11 +86,24 @@ inquirer
   
   ${usage}
   
+  ## 👀 See it in action:
+
+
   
-  ## 📃 License
+  
+  ## 📃 License:
   
   
   ${license}
+
+
+  ## ➕ Contributing:
+
+  ${contribute}
+
+  ## ✔ Tests:
+
+  ${tests}
 
 
   ## ❔ Questions
