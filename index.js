@@ -52,7 +52,7 @@ inquirer
   ])
   .then((answers) => {
       const mdContent = makeMd(answers);
-    fs.writeFile('/sample/README.md', mdContent, (err) =>
+    fs.writeFile('sample/README.md', mdContent, (err) =>
     err ? console.log(err) : console.log('Success!'));
   });
 
@@ -108,7 +108,7 @@ inquirer
 
   ## ❔ Questions
 
-  My Github User name is: ${gitUser}. Here is a link to my personal [GitHub Profile](https://github.com/Hank5050)
+  My Github User name is: ${gitUser}. Here is a link to my personal [GitHub Repo](${gitHub})
 
   If you have any questions please feel free to email me at: ${email} 
   I will return all correspondence as soon as possible.
